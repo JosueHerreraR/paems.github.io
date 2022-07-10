@@ -4,116 +4,203 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bienvenidos</title>
-        <link rel="stylesheet" href="menu.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <title>Feria educativa</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="shortcut icon" href="images/icono_paems.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="subestilos.css">
+
     </head>
-    
     <body>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <a href="#" class="enlace">
-                <img src="img/paenms.png" alt="" class="logo">
-                <ul>
-                    <li><a class="active" href="index.html">Bienvenidos</a></li>
-                    <li><a href="#">Quiénes Somos</a></li>
-                    <li><a href="http://www.seq.gob.mx/paenms/" target="_blank">PAENMS</a></li>
-                    <li><a href="prepas.html">Menú Preparatorias</a></li>
-                    <li><a href="http://www.decidetusestudios.sep.gob.mx/vista/test-vocacional/" target="_blank">Test Vocacional</a></li>
-                </ul>
-            </a>
-        </nav>
-        <div class="Table">
-            <img src="img/benito_juarez.png" alt=""><h1>Benito Juárez</h1>
-        </div>
-        <div>
-            <h2 class="Sub">Publicas</h2>
-            <table style="width: 90%">
-                <tr>
-                    <td>
-                        <img src="img/bachilleres_logo.png" alt="">
-                    </td>
-                    <td>
-                        <img src="img/cecyte_logo.jpeg" alt="">
-                    </td>
-                    <td>
-                        <img src="img/cbtis_logo.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Colegio de Bachilleres Plantel Cancún 1
-                    </td>
-                    <td>
-                        Colegio de Estudios Cientificos y Tecnológicos Cancún 1
-                    </td>
-                    <td>
-                        Centro de bachillerato Tecnológico Industrial y de Servicio 111
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <h2 class="Sub">Privadas</h2>
-            <table style="width: 90%">
-                <tr>
-                    <td>
-                        <img src="img/andres_logo.png" alt="">
-                    </td>
-                    <td>
-                        <img src="img/natkan_logo.png" alt="">
-                    </td>
-                    <td>
-                        <img src="img/alamos_logo.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Preparatoria Andrés Quintana Roo
-                    </td>
-                    <td>
-                        Bachillerato Natkán 
-                    </td>
-                    <td>
-                        Colegio Álamos Cancúncio 111
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <h2 class="Sub">Modular</h2>
-            <table style="width: 90%">
-                <tr>
-                    <td>
-                        <img src="img/cebes_logo.png" alt="">
-                    </td>
-                    <td>
-                        <img src="img/albert_logo.png" alt="">
-                    </td>
-                    <td>
-                        <img src="img/bachilleres_logo.png" alt="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        CEBES Cancun
-                    </td>
-                    <td>
-                        Instituto Veracruzano Albert Einstein 
-                    </td>
-                    <td>
-                        Centro de Servicios Académicos Integrales Unidad Cancun 
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div id="Footer"> 
-            <p>Derechos reservados de la Secretaría de Educación del Estado de Quintana Roo </p>
-            <p>Subsecretaría de Educación Media Superior y Superior</p>
-            <p>Dirección de Educación Media Superior</p>
-        </div>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <a href="#" class="logo">PAEMS</a>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://www.seq.gob.mx/paenms/" target="_blank" class="nav-link ">PAEMS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="prepas.html" class="nav-link ">Menu Preparatorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://www.decidetusestudios.sep.gob.mx/vista/test-vocacional/" target="_blank" class="nav-link ">Test Vocacional</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section class="subhero" id="subhero">
+            <div class="container-img">
+                <img src="images/benito_juarez.jpg" alt="">
+            </div>
+            <div class="container">
+                <h1 class="head hea-dark">Benito Juárez</h1>
+            </div>
+        </section>
+
+        <section class="container uhf-container">
+            <div class="has-large-gaps">
+                <div class="column-hidden">
+                    <h2>Elementos</h2>
+                    <div class="margin-bottom-xs border-bottom">
+                        <h3 class="title margin-bottom-xs">Extras</h3>
+                        <div class="is-vertically-scrollable has-max-height-260">
+                            <p>
+                                Radio en vivo, estaciones de radio en México, radio en linea, radio emisoras on line, radio por internet en Guadalajara. Escuchar radio online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-quarters">
+                    <ul class="grid margin-top-sm">
+                        <li class="grid-item">
+                            <article class="card">
+                                <div class="card-header">
+                                    <figure class="card-header-image">
+                                        <img href="logo_bachilleres.jpg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <a class="card-content-title" href="">
+                                        <h3>Colegio de bachilleres</h3>
+                                    </a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid-item">
+                            <article class="card">
+                                <div class="card-header">
+                                    <figure class="card-header-image">
+                                        <img href="logo_bachilleres.jpg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <a class="card-content-title" href="">
+                                        <h3>CBTIS 111</h3>
+                                    </a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid-item">
+                            <article class="card">
+                                <div class="card-header">
+                                    <figure class="card-header-image">
+                                        <img href="logo_bachilleres.jpg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <a class="card-content-title" href="">
+                                        <h3>Conalep 1</h3>
+                                    </a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid-item">
+                            <article class="card">
+                                <div class="card-header">
+                                    <figure class="card-header-image">
+                                        <img href="logo_bachilleres.jpg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <a class="card-content-title" href="">
+                                        <h3>Colegio de bachilleres</h3>
+                                    </a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid-item">
+                            <article class="card">
+                                <div class="card-header">
+                                    <figure class="card-header-image">
+                                        <img href="logo_bachilleres.jpg">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <a class="card-content-title" href="">
+                                        <h3>Conalep 1</h3>
+                                    </a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+    
+                    <div class="footer-content-about">
+                        <h4>Secretaria de la Educación Quintana Roo</h4>
+                        <div class="circle">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                            <p>PALACIO DE GOBIERNO</p>
+                            <p>AV. 22 DE ENERO NO.001 COL. CENTRO, C.P. 77000.</p>
+                            <p>01 (983) 83 51350</p>
+                            <p>CHETUMAL, QUINTANA ROO, MÉXICO</p>
+                    </div>
+                    <div class="footer-div">
+                        <div class="social-media">
+                            <h4>Siguenos</h4>
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="https://qroo.gob.mx/seq/" target="_blank"><i class="fab fa-google" ></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/GobQuintanaRoo/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/GobQuintanaRoo" target="_blank"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/gobiernodequintanaroo/" target="_blank"><i class="fab fa-instagram" ></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCZinqUA0oPqXxmEAToc8XrQ" target="_blank"><i class="fab fa-youtube" ></i></a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Politicas</h4>
+                            <div>
+                                <a href="privacidad.html" class="nav-link ">Aviso de privacidad</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Noticias</h4>
+                            <form action="" class="news-form">
+                                <input type="text" class="news-input"
+                                placeholder="Escribe tu email"
+                                >
+                                <button class="news-btn" type="submit">
+                                    <i class="fas fa-envelope"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </footer>
+    
+        <script src="detalles.js"></script>
+    
+        
     </body>
 </html>
