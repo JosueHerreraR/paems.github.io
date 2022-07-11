@@ -180,18 +180,17 @@ header {
     align-items: center;
     text-align: center;
 }
+.h2-sub {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: blue;
+    font-weight: 600;
+    line-height: .4;
 }
 .h2-new {
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
     color:cyan;
-    font-weight: 600;
-    line-height: .4;
-}
-.h2-sub {
-    font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
-    color: blue;
     font-weight: 600;
     line-height: .4;
 }
@@ -244,7 +243,7 @@ h3{
     background-color: #3bcc75;
     padding: 1.5rem 3rem;
     color: #fff;
-    border-radius: .4rem;
+    border-radius: 1.4rem;
 }
 .cta-bts {
     font-size: 1.1rem;
