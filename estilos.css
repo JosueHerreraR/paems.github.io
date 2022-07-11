@@ -28,6 +28,11 @@
     margin-left: 15px;
     cursor: pointer;
 }
+.avisoCookies span:hover,
+.avisoCookies span:focus {
+    color: #fff;
+    background-color: #ffc845;
+}
 html {
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
@@ -224,6 +229,12 @@ h3{
     letter-spacing: 2px;
     margin-right: -2px;
 }
+.bts {
+    display: table-cell;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
 .cta-btn {
     font-size: 1.1rem;
     background-color: #3bcc75;
@@ -231,8 +242,20 @@ h3{
     color: #fff;
     border-radius: .4rem;
 }
+.cta-bts {
+    font-size: 1.1rem;
+    background-color: #3bcc75;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    border-radius: 1.4rem;
+}
 .cta-btn:hover,
 .cta-btn:focus {
+    color: #fff;
+    background-color: #ffc845;
+}
+.cta-bts:hover,
+.cta-bts:focus {
     color: #fff;
     background-color: #ffc845;
 }
