@@ -188,6 +188,13 @@ header {
     font-weight: 600;
     line-height: .4;
 }
+.h2-sub {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: blue;
+    font-weight: 600;
+    line-height: .4;
+}
 h3{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
