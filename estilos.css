@@ -313,6 +313,10 @@ h3{
     background: url("img/Feria-educativa.jpg") center no-repeat;
     background-size: cover;
 }
+.ps {
+    background: url("img/secretaria-seq.png") center no-repeat;
+    background-size: cover;
+}
 /*footer*/
 footer {
     padding: 3rem 0;
