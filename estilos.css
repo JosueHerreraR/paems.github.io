@@ -355,6 +355,12 @@ footer {
 .footer-content-about p {
     line-height: 2;
 }
+.end{
+    text-align: center;
+    background-color:#000;
+    padding: 2rem;
+    font-size: 2rem;
+}
 .social-icons {
     list-style: none;
     margin-bottom: 5.4rem;
