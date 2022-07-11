@@ -180,6 +180,14 @@ header {
     align-items: center;
     text-align: center;
 }
+.subhero {
+    width: 100%;
+    height: 45vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 .h2-sub {
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
