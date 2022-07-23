@@ -111,7 +111,6 @@ header {
     justify-content: space-around;
     z-index: 1250;
     transform: translateX(-100%);
-   
 }
 .nav::before {
     content: '';
@@ -125,7 +124,6 @@ header {
     opacity: 0;
     transform: scale(0);
     transition: opacity .5s;
-
 }
 .open .fa-times {
     display: block;
@@ -240,33 +238,16 @@ h3{
     letter-spacing: 2px;
     margin-right: -2px;
 }
-.bts {
-    display: table-cell;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: -2px;
-}
 .cta-btn {
     font-size: 1.1rem;
     background-color: #3bcc75;
     padding: 1.5rem 3rem;
-    color: #fff;
-    border-radius: 1.4rem;
-}
-.cta-bts {
-    font-size: 1.1rem;
-    background-color: #3bcc75;
-    padding: 1.5rem 3rem;
+    margin: 10px;
     color: #fff;
     border-radius: 1.4rem;
 }
 .cta-btn:hover,
 .cta-btn:focus {
-    color: #fff;
-    background-color: #ffc845;
-}
-.cta-bts:hover,
-.cta-bts:focus {
     color: #fff;
     background-color: #ffc845;
 }
