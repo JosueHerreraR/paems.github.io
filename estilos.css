@@ -282,14 +282,25 @@ h3{
     margin-bottom: 2.4rem
 }
 /*Entre Textos*/
-.taste {
-    background: url("img/school.jpg") center no-repeat;
-    background-size: cover;
-}
 .bt {
     min-height: 50vh;
     display: flex;
     align-items: center;
+}
+.taste {
+    background: url("img/school.jpg") center no-repeat;
+    background-size: cover;
+}
+.pb {
+    background: url("img/Feria-educativa.jpg") center no-repeat;
+    background-size: cover;
+}
+.ps {
+    background: url("img/secretaria-seq.png") center no-repeat;
+    background-size: cover;
+}
+.recob{
+    background-color: dodgerblue;
 }
 /*Imagenes*/
 .image-group {
@@ -300,14 +311,6 @@ h3{
 .disco .res-des {
     padding-top: 3rem;
     margin-bottom: 0;
-}
-.pb {
-    background: url("img/Feria-educativa.jpg") center no-repeat;
-    background-size: cover;
-}
-.ps {
-    background: url("img/secretaria-seq.png") center no-repeat;
-    background-size: cover;
 }
 /*footer*/
 footer {
