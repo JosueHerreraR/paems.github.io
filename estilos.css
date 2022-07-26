@@ -112,6 +112,19 @@ header {
     z-index: 1250;
     transform: translateX(-100%);
 }
+.nav-link--inside{
+    padding: 30px 100px 30px 20px;
+}
+.nav-nesting{
+    list-style: none;
+    transition:clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+}
 .nav::before {
     content: '';
     position: fixed;
@@ -145,6 +158,12 @@ header {
 }
 .nav-item {
     border-bottom: 2px solid rgba(255, 255, 255, .3);
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+.nav-item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
 }
 .nav-link {
     display: block;
@@ -385,7 +404,7 @@ footer {
 }
 @media screen and (min-width: 900px) {
     section {
-        padding: 7.9rem;
+        padding: 5rem;
     }
     .menu-toggle {
         display: none;
