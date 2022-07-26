@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+  --bg-grey: #F6F9FC;
+  --color-hover: #fe696a;
+  --link-hover: #A598A5;
+}
+.hover:hover{
+  color: var(--color-hover);
+  transition: 500ms all;
+  cursor: pointer;
+  color: black;
+}
+
+.minicontainer{
+  padding: 20px 9%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.p-relative{
+  position: relative;
+}
+
+.grid .item-grid .p-relative{
+  height: 85%;
+}
+
+.grid .item-grid .p-relative > div:first-child{
+  height: 100%;
+}
+
+.grid .item-grid .p-relative > div > img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.grid .p-relative > div:first-child::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 1s ease-in-out;
+  z-index: 1;
+}
+
+.grid .p-relative > div:first-child:hover::before{
+  background-color: rgba(0,0,0,0.4);
+}
+
+.grid .p-relative > div:first-child:hover + .content-icon,.content-icon:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  font-size: 17px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 100;
+}
+
+.grid .item-grid > a{
+  display: block;
+  padding-top: 15px;
+  font-weight: 700;
+  padding-left: 20px;
+  height: 15%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1286px){
+  .minicontainer{
+    padding: 20px 90px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 580px){
+  .grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
