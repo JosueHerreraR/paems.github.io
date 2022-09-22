@@ -296,11 +296,11 @@ h3{
     display: flex;
     align-items: center;
 }
-/* .taste {
+.taste {
     background: url("../img/school.jpg") center no-repeat;
     background-size: cover;
 }
-.pb {
+/* .pb {
     background: url("../img/Feria-educativa.jpg") center no-repeat;
     background-size: cover;
 }
