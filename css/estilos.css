@@ -235,7 +235,7 @@ h3{
 }
 .circle {
     font-size: 1.5rem;
-    color: #790252;
+    color: #ab0a3d;
     margin: 0 1.6rem;
 }
 .btn {
@@ -246,7 +246,7 @@ h3{
 }
 .cta-btn {
     font-size: 1.1rem;
-    background-image: linear-gradient(-225deg, #4C0033 5%, #790252 52%, #AF0171 100%);
+    background-image: linear-gradient(to top, #440412 0%, #ab0a3d 100%);
     padding: 1.5rem 3rem;
     margin: 10px;
     color: #fff;
@@ -367,7 +367,7 @@ footer {
 }
 .social-icons i {
     font-size: 2.5rem;
-    color: #AF0171;
+    color: #ab0a3d;
     padding: .8rem 2rem; 
 }
 .social-icons i:hover,
@@ -389,7 +389,7 @@ footer {
 .news-btn {
     background: transparent;
     border: none;
-    color: #252525;
+    color: #ab0a3d;
     cursor: pointer;
     font-size: 1.6rem;
     padding: 1px .6rem;
@@ -411,7 +411,7 @@ footer {
     text-align: center;
 }
 .avisoCookies span{
-    background-image: linear-gradient(-225deg, #4C0033 5%, #790252 52%, #AF0171 100%);
+    background-image: linear-gradient(to top, #440412 0%, #ab0a3d 100%);
     color: white;
     display: inline-block;
     padding: 10px;
