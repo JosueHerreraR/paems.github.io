@@ -148,7 +148,7 @@ header.abajo{
     font-weight: 600;
 }
 .logo:hover{
-    color:#AF0171;
+    color:#ab0a3d;
 }
 .nav-item {
     border-bottom: 2px solid rgba(255, 255, 255, .3);
@@ -168,11 +168,11 @@ header.abajo{
     margin-right: -2px;
 }
 .nav-link:hover {
-    color: #AF0171;
+    color: #ab0a3d;
 }
 .nav-priv {
     display: block;
-    color: #AF0171;
+    color: #ab0a3d;
     text-transform: uppercase;
     font-size: 1.6rem;
     letter-spacing: 2px;
@@ -266,7 +266,7 @@ h3{
     margin-top: 6.9rem;
 }
 .global .circle {
-    color: #4C0033;
+    color: #440412;
     margin: 2.4rem 0;
 }
 .hea-dark {
