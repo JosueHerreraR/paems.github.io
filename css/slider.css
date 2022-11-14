@@ -1,0 +1,112 @@
+/* Transmiciones - Slider */
+
+.subcontainer{
+    width: 90%;
+    min-height: 50vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider{
+    background-color: #f2f2f2;
+    padding: 3.9rem 0;
+    max-width: auto;
+    align-items: center;
+}
+.slider_subcontainer{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;   /*Espaciado*/
+}
+.slider_body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    display: grid;
+    background-color: #f2f2f2;
+    border: 5px solid black;
+    border-radius: 80px;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+    pointer-events: none;
+}
+.slider_body-show{
+    opacity: 1;
+    top: 50%;
+    pointer-events: unset;
+    align-items: center;
+    background-color: white;
+}
+.slider_text{
+    max-width: 600px;
+    text-align: center;
+}
+.subtitle{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.slider_review{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+.slider_img{
+    width: 230px;
+    height: 230px;
+    border-radius: 20%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.slider_arrow{
+    cursor: pointer;
+    width: 90%;
+    border-radius: 50%;
+}
+.slider_arrow:hover{
+    background-color:#ffc845;
+}
+.slider_arrow:nth-of-type(2){
+    justify-self: end;
+}
+
+/* Responsive Desing*/
+
+@media (max-width:768px){
+    .slider_body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 1em;
+    }
+    .slider_picture{
+        grid-row: 1/2;
+    }
+    .slider_img{
+        width: 210px;
+        height: 210px;
+    }
+}
+@media (max-width:425px){
+    .slider_container{
+        grid-template-columns: 25px 1fr 25px;
+    }
+    .slider_arrow{
+        width: 100%;
+    }
+    .slider_img{
+        width: 180px;
+        height: 180px;
+    }
+    .subtitle{
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .slider_review{
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
