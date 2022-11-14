@@ -5,13 +5,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    background: #fec107;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     padding: 0 10px;
 }
 .wrapper{
     max-width: 500px;
     width: 100%;
-    background: #fff;
+    background: #ab0a3d;
     margin: 20px auto;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
     padding: 30px;
@@ -20,7 +20,7 @@ body{
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 25px;
-    color: #fec107;
+    color: white;
     text-transform: uppercase;
     text-align: center;
 }
@@ -34,7 +34,7 @@ body{
 }
 .wrapper .form .inputfield label{
     width: 200px;
-    color: #757575;
+    color: white;
     margin-right: 10px;
     font-size: 14px;
 }
@@ -77,18 +77,10 @@ body{
     border: 0px;
     padding: 8px 10px;
     font-size: 15px;
-    border: 1px solid #d5dbd9;
+    border: 2px solid black;
     border-radius: 3px;
 }
-.wrapper .form .inputfield .input:focus,
-.wrapper .form .inputfield .textarea:focus,
-.wrapper .form .inputfield .custom_select select:focus{
-    border: 1px solid #fec107;
-}
-.wrapper .form .inputfield p{
-    font-size: 14px;
-    color: #757575;
-}
+
 .wrapper .form .inputfield .check{
     width: 15px;
     height: 15px;
@@ -96,16 +88,9 @@ body{
     display: block;
     cursor: pointer;
 }
-.wrapper .form .inputfield .check input[type="checkbox"]{
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
 .wrapper .form .inputfield .check .checkmark{
     width: 15px;
     height: 15px;
-    border: 1px solid #fec107;
     display: block;
     position: relative;
 }
@@ -121,9 +106,6 @@ body{
     transform: rotate(-45deg);
     display: none;
 }
-.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
-    background: #fec107;
-}
 .wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
     display: block;
 }
@@ -132,14 +114,17 @@ body{
     padding: 8px 10px;
     font-size: 15px; 
     border: 0px;
-    background:  #fec107;
-    color: #fff;
+    color: black;
+    background-color: whitesmoke;
+    border: 3px solid #440412;
     cursor: pointer;
     border-radius: 3px;
     outline: none;
 }
 .wrapper .form .inputfield .btn:hover{
-    background: #ffd658;
+    background-image: linear-gradient(to top, #440412 0%, #ab0a3d 100%);
+    border: 3px solid #AB0A3D;
+    color: white;
 }
 .wrapper .form .inputfield:last-child{
     margin-bottom: 0;
