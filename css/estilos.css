@@ -209,7 +209,7 @@ header.abajo{
     font-size: 3rem;
     color: #ab0a3d;
     font-weight: 600;
-    line-height: .4;
+    line-height: 3.5rem;
 }
 .h2-new {
     font-size: 3rem;
@@ -252,6 +252,7 @@ h3{
     background-color: whitesmoke;
     border: 3px solid #440412;
     border-radius: 1.4rem;
+    font-weight: 650;
 }
 .cta-btn:hover,
 .cta-btn:focus {
