@@ -42,6 +42,9 @@ ul:not(.browser-default){
     margin-top: 0;
     text-align: center;
 }
+.minisub:hover{
+    color: #ffc845;
+}
 .linea-division {
     width: 80%;
     height: 2px;
