@@ -45,10 +45,14 @@
     font-weight: 300;
     font-size:30px;
     position: absolute;
+    font-weight: 600;
     top: 50%;
     left:50%;
     text-align: center;
     transform: translate(-50%, -50%);
+}
+.overlay h2:hover{
+    color: #ffc845;
 }
 .imagen:hover .overlay{
     height:100%;
