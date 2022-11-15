@@ -84,3 +84,11 @@ ul:not(.browser-default){
 .carousel .indicators .indicator-item.active{
     background-color: #ffc845;
 }
+
+/* Responsive Desing*/
+
+@media (max-width: 700px) {
+    .carousel{
+        height: 620px;
+    }
+}
