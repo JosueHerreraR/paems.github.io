@@ -32,9 +32,11 @@ embed{
 .container-contenido h2{
     font-size: 35px;
     background-image: linear-gradient(to top, #440412 0%, #ab0a3d 100%);
-    border-radius: 20px;
+    border-radius: 80px;
+	max-width: 1000px;
     padding: 30px;
     color: #e2ebf0;
+	margin: auto;
 }
 .container-contenido h3{
     font-size: 28px;
@@ -53,7 +55,7 @@ embed{
 /*Sección - Galeria*/
 
 .wrap{
-	max-width: 1100px;
+	max-width: 1000px;
 	width: 100%;
 	margin: auto;
 }
@@ -98,7 +100,7 @@ embed{
 	color: black;
 }
 
-/* PRODUCTOS ============*/
+/* Imagenes - Galeria*/
 
 .products-list{
 	width: 82%;
@@ -119,6 +121,7 @@ embed{
 }
 .products-list .product-item img{
 	width: 100%;
+	height: 100px;
 	object-fit: cover;
 }
 .products-list .product-item img:hover{
@@ -245,10 +248,12 @@ embed{
 }
 @media screen and (max-width: 700px){
 	.category_list{
+		display: flex;
 		flex-direction: column;
+		margin-left: 25%;
 	}
 	.category_list .category_item{
-		width: 100%;
+		width: 60%;
 		margin-bottom: 10px;
 	}
 }
@@ -270,3 +275,4 @@ embed{
 		margin-left: 0px;
 	}
 }
+
