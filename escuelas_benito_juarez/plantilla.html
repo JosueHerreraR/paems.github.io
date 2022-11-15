@@ -1,0 +1,234 @@
+<!-- <?php
+	$enlace = mysqli_connect("localhost","root","", "datos_colegios");
+
+	if(!$enlace){
+		echo "Error en la conexeion con el servidor";
+	}
+    $i=1;
+    $consulta = "SELECT * FROM general WHERE id = $i";
+    $ejecutarConsulta = mysqli_query($enlace, $consulta);
+    $fila = mysqli_fetch_array($ejecutarConsulta);
+?> -->
+<!-- show variables like 'max_allowed_packet'
+set global max_allowed_packet=33554432 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="autor" content="Joel Josue Herrera Reyes y Jose Orlando Poot Dzul"/>
+        <meta name="copyright" content="Servicios Educativos de Quintana Roo y la Universidad Autonoma del Estado de Quintana Roo"/> 
+        <meta name="description" content="Feria de Orientación Educativa del Nivel Media Superior">
+        <title>Plantilla - Benito Juarez</title>
+        <link rel="shortcut icon" href="../img/icono_paems.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/escuelas.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <a href="index.html" class="logo">PAEMS</a>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link ">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="quienes_somos.html" class="nav-link">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://www.seq.gob.mx/paenms/" target="_blank" class="nav-link ">PAEMS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="preparatorias.html" class="nav-link">Preparatorias</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <section class="subhero" id="subhero">
+            <div class="container-img">
+                <img src="../colegios/Benito_Juarez/cecyte_logo.jpeg" alt="">
+            </div>
+            <div class="container-municipio">
+                <h1 class="head hea-dark">Cecyte Cancún 1</h1>
+            </div>
+        </section>
+
+        <section class="container-contenido">
+
+            <div class="bienvenidos">
+                <h2>Bienvenidos</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2YPTsMKmeeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="oferta-educativa">
+                <h2>Oferta Educativa</h2>
+                <embed type="application/pdf" src="../escuelas_benito_juarez/Practicas_formulario/OFERTA EDUCATIVA.pdf"/>
+            </div>
+            <div class="becas">
+                <h2>Becas</h2>
+                <embed type="application/pdf" src="../escuelas_benito_juarez/Practicas_formulario/BECAS CECYTE.pdf"/>
+            </div>
+            <div class="wrap">
+                <h2>Galerías</h2>
+                <div class="store-wrapper">
+                    <div class="category_list">
+                        <button class="category_item" category="all">Todos</button>
+                        <button class="category_item" category="instalacion">Instalaciones</button>
+                        <button class="category_item" category="deportiva">Actividades Deportivas</button>
+                        <button class="category_item" category="cultural">Actividades Culturales</button>
+                        <button class="category_item" category="extracurricular">Actividades Extracurricular</button>
+                        <button class="category_item" category="tecnologico">Pabellón Tecnológico</button>
+                    </div>
+                    <section class="products-list">
+                    <div class="product-item" category="deportiva">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/act_dep_1.png" onclick="openFulImg(this.src)" alt="deportiva" >
+                        </div>
+                        <div class="product-item" category="deportiva">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/act_dep_2.png" onclick="openFulImg(this.src)" alt="deportiva" >
+                        </div>
+                        <div class="product-item" category="deportiva">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/act_dep_3.png" onclick="openFulImg(this.src)" alt="deportiva" >
+                        </div>
+                        <div class="product-item" category="cultural">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/act_cult_1.png" onclick="openFulImg(this.src)" alt="cultural" >
+                        </div>
+                        <div class="product-item" category="cultural">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/act_cult_2.png" onclick="openFulImg(this.src)" alt="cultural" >
+                        </div>
+                        <div class="product-item" category="cultural">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/act_cult_3.png" onclick="openFulImg(this.src)" alt="cultural" >
+                        </div>
+                        <div class="product-item" category="instalacion">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/instalacion_1.png" onclick="openFulImg(this.src)" alt="instalacion" >
+                        </div>
+                        <div class="product-item" category="instalacion">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/instalacion_2.png" onclick="openFulImg(this.src)" alt="instalacion" >
+                        </div>
+                        <div class="product-item" category="instalacion">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/instalacion_3.png" onclick="openFulImg(this.src)" alt="instalacion" >
+                        </div>
+                        <div class="product-item" category="extracurricular">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/act_ext_1.png" onclick="openFulImg(this.src)" alt="extracurricular" >
+                        </div>
+                        <div class="product-item" category="extracurricular">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/act_ext_2.png" onclick="openFulImg(this.src)" alt="extracurricular" >
+                        </div>
+                        <div class="product-item" category="extracurricular">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/act_ext_3.png" onclick="openFulImg(this.src)" alt="extracurricular" >
+                        </div>
+                        <div class="product-item" category="tecnologico">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/pab_tec_1.png" onclick="openFulImg(this.src)" alt="tecnologicos" >
+                        </div>
+                        <div class="product-item" category="tecnologico">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/pab_tec_2.png" onclick="openFulImg(this.src)" alt="tecnologico" >
+                        </div>
+                        <div class="product-item" category="tecnologico">
+                            <img src="../escuelas_benito_juarez/Practicas_formulario/pab_tec_3.png" onclick="openFulImg(this.src)" alt="tecnologico" >
+                        </div>
+                    </section>
+                    <div class="lightbox" id="fulImgBox">
+                        <img src="" id="fulImg" alt="" >
+                        <span onclick="closeImg()">x</span>
+                    </div>
+                </div>
+            </div>
+            <div class="casos_de_exito">
+                <h2>Casos de Éxito</h2>
+                <iframe src="https://www.youtube.com/embed/A7l2vzZT0eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="contactos">
+                <h2>Contactos</h2>
+                <ul class="social-prepa">
+                    <li><a href="https://www.facebook.com/CecyteQuintanaRooPlantelCancun1" target="_blank" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="https://twitter.com/CecyteUno" target="_blank" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.instagram.com/cecyte1cancun/" target="_blank" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://qroo.gob.mx/cecyte/" target="_blank" class="web"><ion-icon name="globe-outline"></ion-icon></a></li>
+                </ul>
+            </div>
+            <div class="direccion">
+                <h2>Dirección</h2>
+                <div class="box-direccion">
+                    <div class="box">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="box">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <p>9981688942</p>
+                    </div>
+                    <div class="box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <p>glenty.aviles@cecyteqroo.edu.mx </p>
+                    </div>
+                </div>
+                <div class="map">
+                    <p>Calle 71 S/N, Esquina AV. Leona Vicario, Mz-28, Lte. 1, Reg. 229 </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7440.816966327973!2d-86.853339!3d21.175926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x61923d1bd1196645!2sCECyTE%20Canc%C3%BAn%201!5e0!3m2!1ses-419!2sus!4v1668477863282!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="foot__container">
+                <div class="content__footer">
+                    <div class="profil">
+                        <div class="logo_area">
+                            <img src="../img/banner_quintanaRoo.jpg" alt="">
+                            <div class="circle__footer">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <span class="logo__name">Feria Educativa</span>
+                        </div>
+                        <div class="social__media">
+                            <a href="https://www.facebook.com/GobQuintanaRoo/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="https://twitter.com/GobQuintanaRoo" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                            <a href="https://www.instagram.com/gobiernodequintanaroo/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                            <a href="https://www.youtube.com/channel/UCZinqUA0oPqXxmEAToc8XrQ" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                            <a href="https://qroo.gob.mx/seq/" target="_blank"><i class='bx bx-globe'></i></a>
+                        </div>
+                    </div>
+                    <div class="service__area">
+                        <ul class="service__header">
+                            <li class="service__name">Secciones</li>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../quienes_somos.html">Quienes Somos</a></li>
+                            <li><a href="http://www.seq.gob.mx/paenms/" target="_blank">PAEMS</a></li>
+                            <li><a href="../preparatorias.html">Preparatorias</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__bottom">
+                    <div class="copy_right">
+                        <i class='bx bxs-copyright'></i>
+                        <span>Secretaria de Educación de Quintana Roo</span>
+                    </div>
+                    <div class="tou">
+                        <a href="../privacidad.html">Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="../js/jquery-3.2.1.js"></script>
+        <script src="../js/lightbox.js"></script>
+        <script src="../js/menu_responsive.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="../js/image.js"></script>
+
+    </body>
+</html>
