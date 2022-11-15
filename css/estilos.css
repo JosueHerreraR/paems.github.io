@@ -209,7 +209,7 @@ header.abajo{
     font-size: 3rem;
     color: #ab0a3d;
     font-weight: 600;
-    line-height: 3.5rem;
+    line-height: .4;
 }
 .h2-new {
     font-size: 3rem;
@@ -252,7 +252,7 @@ h3{
     background-color: whitesmoke;
     border: 3px solid #440412;
     border-radius: 1.4rem;
-    font-weight: 650;
+    font-weight: 600;
 }
 .cta-btn:hover,
 .cta-btn:focus {
@@ -346,6 +346,8 @@ footer{
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+    justify-content: center;
+    padding: 20px;
 }
 .profil .logo_area img{
     width: 30%;
@@ -369,6 +371,11 @@ footer{
 .desc__area p{
     font-weight: 400;
     line-height: 28px;
+}
+.social__media{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .social__media a{
     color: #AB0A3D;
@@ -524,10 +531,12 @@ hr{
     }
 }
 @media screen and (max-width: 768px){
+    .profil,
     .content__footer, 
     .service__area{
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
     }
     .service__header{
         margin-left: 0;
@@ -547,4 +556,3 @@ hr{
         margin-bottom: 8px;
     }
 }
-
