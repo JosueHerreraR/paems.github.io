@@ -1,5 +1,12 @@
 /* Transmiciones - Slider */
 
+:root{
+    --slider-color: #F2F2F2;
+    --texto-principal: #000;
+    --texto-secundario: #FFF;
+    --principal-color: #AB0A3D;
+    --hover-color: #FFC845;
+}
 .subcontainer{
     width: 90%;
     min-height: 50vh;
@@ -8,7 +15,7 @@
     overflow: hidden;
 }
 .slider{
-    background-color: #f2f2f2;
+    background-color: var(--slider-color);
     padding: 3.9rem 0;
     max-width: auto;
     align-items: center;
@@ -24,8 +31,8 @@
     grid-row: 1/2;
     opacity: 0;
     display: grid;
-    background-color: #f2f2f2;
-    border: 5px solid black;
+    background-color: var(--slider-color);
+    border: 5px solid var(--texto-principal);
     border-radius: 80px;
     grid-template-columns: 1fr max-content;
     align-items: center;
@@ -37,7 +44,7 @@
     top: 50%;
     pointer-events: unset;
     align-items: center;
-    background-color: white;
+    background-color: var(--texto-secundario);
 }
 .slider_text{
     max-width: 600px;
@@ -68,7 +75,7 @@
     border-radius: 50%;
 }
 .slider_arrow:hover{
-    background-color:#ffc845;
+    background-color: var(--hover-color);
 }
 .slider_arrow:nth-of-type(2){
     justify-self: end;
