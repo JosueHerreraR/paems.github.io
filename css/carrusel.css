@@ -1,5 +1,12 @@
 /* Carrusel - Municipios */
 
+:root{
+    --texto-principal: #000;
+    --texto-secundario: #FFF;
+    --principal-color: #AB0A3D;
+    --secundario-color: #440412;
+    --hover-color: #FFC845;
+}
 nav{
     box-shadow: none;
 }
@@ -17,14 +24,14 @@ ul:not(.browser-default){
     font-size: 40px;
     margin-bottom: 40px;
     text-align: center;
-    background-image: linear-gradient(to top, #440412 0%, #ab0a3d 100%);
-    color: white;
+    background-image: linear-gradient(to top, var(--secundario-color) 0%, var(--principal-color) 100%);
+    color: var(--texto-secundario);
     padding: 10px;
     border-radius: 50px;
 }
 .subtitulo {
     margin: 0;
-    color: black;
+    color: var(--texto-principal);
     display: inline;
     font-size: 35px;
     font-weight: 600;
@@ -32,7 +39,7 @@ ul:not(.browser-default){
     text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
 }
 .minisub { 
-    color: black;
+    color: var(--texto-principal);
     margin: 7px 0;
     font-size: 50px;
     font-weight: 600;
@@ -40,12 +47,12 @@ ul:not(.browser-default){
     text-align: center;
 }
 .minisub:hover{
-    color: #ffc845;
+    color: var(--hover-color);
 }
 .linea-division {
     width: 80%;
     height: 2px;
-    background-color: black;
+    background-color: var(--texto-principal);
 }
 .container-municipio {
     width: auto;
@@ -56,7 +63,7 @@ ul:not(.browser-default){
 /*Estilos del carrusel*/
 
 .carousel{
-    min-height: 600px;
+    min-height: 550px;
 }
 .carousel .carousel-item{
     display: flex;
@@ -68,7 +75,7 @@ ul:not(.browser-default){
 } 
 .carousel .carousel-item img{
     width: 100%;
-    height: 73%;
+    height: 85%;
     position: absolute;
     top: 0;
     left: 0;
@@ -79,14 +86,11 @@ ul:not(.browser-default){
     border-radius: 0;
     transform: rotate(45deg);
     margin: 0 15px;
-    background-color: #ab0a3d;
+    background-color:var(--principal-color);
 }
 .carousel .indicators .indicator-item.active{
-    background-color: #ffc845;
+    background-color: var(--hover-color);
 }
-
-/* Responsive Desing*/
-
 @media (max-width: 700px) {
     .carousel{
         height: 620px;
