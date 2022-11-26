@@ -1,9 +1,22 @@
-/*General*/
+/*Paneles (Stand) - Genelares*/
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+:root{
+    --escuela-color: #E2EBF0;
+	--h1-titulo: #494B4D;
+	--h1-after: #C7C7C7;
+    --texto-principal: #000;
+    --texto-secundario: #FFF;
+    --principal-color: #AB0A3D;
+	--secundario-color: #440412;
+    --hover-color: #FFC845;
+	--product-list: #2D3E50;
+	--h3-degradado1: #CFD9DF;
+	--h3-degradado2: #E2EBF0;
 }
 iframe{
     height: 350px;
@@ -31,17 +44,17 @@ embed{
 }
 .container-contenido h2{
     font-size: 35px;
-    background-image: linear-gradient(to top, #440412 0%, #ab0a3d 100%);
+    background-image: linear-gradient(to top, var(--secundario-color) 0%, var(--principal-color) 100%);
     border-radius: 80px;
 	max-width: 1000px;
     padding: 30px;
-    color: #e2ebf0;
+    color: var(--escuela-color);
 	margin: auto;
 }
 .container-contenido h3{
     font-size: 28px;
     padding: 20px;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-image: linear-gradient(to top, var(--h3-degradado1) 0%, var(--h3-degradado2) 100%);
     border-radius: 25px;
 }
 
@@ -60,7 +73,7 @@ embed{
 	margin: auto;
 }
 .wrap h1{
-	color: #494B4D;
+	color: var(--h1-titulo);
 	font-size: 30px;
 	display: flex;
 	flex-direction: column;
@@ -71,7 +84,7 @@ embed{
 	content: '';
 	width: 100%;
 	height: 1px;
-	background: #C7C7C7;
+	background: var(--h1-after);
 	margin: 20px 0;
 }
 .store-wrapper{
@@ -89,15 +102,15 @@ embed{
 	width: 90%;
 	padding: 15px 0;
 	margin-bottom: 20px;
-	background: #ab0a3d;
+	background: var(--principal-color);
 	text-align: center;
 	text-decoration: none;
-	color: #fff;
+	color: var(--texto-secundario);
     border-radius: 25px;
 }
 .category_list .ct_item-active{
-	background: #ffc845;
-	color: black;
+	background: var(--hover-color);
+	color: var(--texto-principal);
 }
 
 /* Imagenes - Galeria*/
@@ -133,9 +146,9 @@ embed{
 	display: block;
 	width: 100%;
 	padding: 8px 0;
-	background: #2D3E50;
+	background: var(--product-list);
 
-	color: #fff;
+	color: var(--texto-secundario);
 	text-align: center;
 	text-decoration: none;
 }
@@ -161,18 +174,18 @@ embed{
 	height: 100%;
 	max-height: 500px;
 	object-fit: cover;
-	border: 5px solid white;
+	border: 5px solid var(--texto-secundario);
 }
 .lightbox span{
 	position: absolute;
 	top: 5%;
 	right: 5%;
 	font-size: 35px;
-	color: white;
+	color: var(--texto-secundario);
 	cursor: pointer;
 }
 .lightbox span:hover{
-	color: #ffc845;
+	color: var(--hover-color);
 }
 
 /*Sección - Contactos*/
@@ -188,13 +201,14 @@ embed{
 }
 .box-direccion .box {
     height: 170px;
-    width: 270px;
+    /* width: 270px; */
     text-align: center;
     margin: 20px;
 }
 .box-direccion .box p {
     padding: 0 15px;
     font-size: 20px;
+	text-align: center;
 }
 .social-prepa{
     position: relative;
@@ -211,11 +225,11 @@ embed{
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
-    color: black;
+    color: var(--texto-principal);
 }
 .social-prepa li a:hover{
     transform: translate(-10px);
-    color: #ffc845;
+    color: var(--hover-color);
 }
 
 /*Responsive Desing*/
@@ -275,4 +289,3 @@ embed{
 		margin-left: 0px;
 	}
 }
-
