@@ -7,13 +7,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --texto-principal: #000;
+    --texto-secundario: #FFF;
+    --nav-color: #252525;
+    --principal-color: #AB0A3D;
+    --secundario-color: #440412;
+    --hover-color: #FFC845;
+    --footer-color: #121212;
+    --footer-hr: #828282;
+}
 @font-face {
     font-family: Montserrat;
     src: url(../css/Montserrat-Regular.otf);
 }
 html {
     font-size: 10px;
-    color: #000;
+    color: var(--texto-principal);
     scroll-behavior: smooth;
     font-family: Montserrat;
 }
@@ -69,7 +79,7 @@ header {
     background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
 }
 header.abajo{
-    background-color: #252525;
+    background-color: var(--nav-color);
 }
 .nav {
     height: 7.2rem;
@@ -80,7 +90,7 @@ header.abajo{
     line-height: 20px;
 }
 .menu-toggle {
-    color: #fff;
+    color: var(--texto-secundario);
     font-size: 2.2rem;
     position: absolute;
     top: 50%;
@@ -99,7 +109,7 @@ header.abajo{
     left: 0;
     width: 80%;
     height: 100vh;
-    background-color: #252525;
+    background-color: var(--nav-color);
     padding: 4.4rem;
     display: flex;
     flex-direction: column;
@@ -147,12 +157,12 @@ header.abajo{
     transform: scale(1);
 }
 .logo {
-    color: #fff;
+    color: var(--texto-secundario);
     font-size: 2rem;
     font-weight: 600;
 }
 .logo:hover{
-    color:#ab0a3d;
+    color: var(--principal-color);
 }
 .nav-item {
     border-bottom: 2px solid rgba(255, 255, 255, .3);
@@ -165,25 +175,25 @@ header.abajo{
 }
 .nav-link {
     display: block;
-    color: #fff;
+    color: var(--texto-secundario);
     text-transform: uppercase;
     font-size: 1.6rem;
     letter-spacing: 2px;
     margin-right: -2px;
 }
 .nav-link:hover {
-    color: #ab0a3d;
+    color: var(--principal-color);
 }
 .nav-priv {
     display: block;
-    color: #ab0a3d;
+    color: var(--principal-color);
     text-transform: uppercase;
     font-size: 1.6rem;
     letter-spacing: 2px;
     margin-right: -2px;
 }
 .nav-priv:hover {
-    color: #ffc845;
+    color: var(--hover-color);
 }
 
 /*Banner*/
@@ -191,8 +201,9 @@ header.abajo{
 .hero {
     width: 100%;
     height: 45vh;
-    background: #AB0A3D;
-    background-size: cover;
+    background-color: var(--principal-color);
+    /* background: url("../img/hero.jpg") center no-repeat;
+    background-size: cover; */
     display: flex;
     align-items: center;
     text-align: center;
@@ -207,13 +218,13 @@ header.abajo{
 }
 .h2-sub {
     font-size: 3rem;
-    color: #ab0a3d;
+    color: var(--principal-color);
     font-weight: 600;
     line-height: .4;
 }
 .h2-new {
     font-size: 3rem;
-    color: black;
+    color:var(--secundario-color);
     font-weight: 600;
     line-height: 3.5rem;
 }
@@ -227,7 +238,7 @@ h3{
     font-size: 3rem;
 }
 .head {
-    color: #fff;
+    color: var(--texto-secundario);
     font-size: 3.7rem;
     text-transform: uppercase;
     font-weight: 900;
@@ -235,7 +246,7 @@ h3{
 }
 .circle {
     font-size: 1.5rem;
-    color: #440412;
+    color: var(--secundario-color);
     margin: 0 1.6rem;
 }
 .btn {
@@ -248,9 +259,9 @@ h3{
     font-size: 1.1rem;
     padding: 1.5rem 3rem;
     margin: 10px;
-    color: black;
-    background-color: whitesmoke;
-    border: 3px solid #440412;
+    color: var(--texto-principal);
+    background-color: var(--texto-secundario);
+    border: 3px solid var(--secundario-color);
     border-radius: 1.4rem;
     font-weight: 600;
 }
@@ -258,8 +269,8 @@ h3{
 .cta-btn:focus {
     color: white;
     transform: translate(0, -6px);
-    background-image: linear-gradient(to top, #440412 0%, #ab0a3d 100%);
-    border: 1px solid #AB0A3D;
+    background-image: linear-gradient(to top, var(--secundario-color) 0%, var(--principal-color) 100%);
+    border: 1px solid var(--principal-color);
 }
 .global {
     text-align: center;
@@ -269,11 +280,11 @@ h3{
     margin-top: 6.9rem;
 }
 .global .circle {
-    color: #440412;
+    color: var(--secundario-color);
     margin: 2.4rem 0;
 }
 .hea-dark {
-    color: #252525;
+    color: var(--nav-color);
     letter-spacing: .7rem;
     margin-right: -.7rem;
 }
@@ -305,8 +316,8 @@ h3{
     align-items: center;
 }
 .recob{
-    background-image: linear-gradient(to top, #440412 0%, #ab0a3d 100%);
-    color: #fff;
+    background-image: linear-gradient(to top, var(--secundario-color) 0%, var(--principal-color) 100%);
+    color: var(--texto-secundario);
 }
 
 /*Imagenes*/
@@ -326,10 +337,10 @@ h3{
 footer{
     position: relative;
     width: 100%;
-    background-color: #121212;
+    background-color: var(--footer-color);
     box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.25);
     transition: background 0.3s linear;
-    color: white;
+    color: var(--texto-secundario);
 }
 .foot__container{
     max-width: 1240px;
@@ -356,7 +367,7 @@ footer{
 }
 .circle__footer{
     font-size: 1.5rem;
-    color: #AB0A3D;
+    color: var(--principal-color);
     margin: 0 1.6rem;
 }
 .logo_area .logo__name{
@@ -378,12 +389,12 @@ footer{
     text-align: center;
 }
 .social__media a{
-    color: #AB0A3D;
+    color: var(--principal-color);
     margin-right: 22px;
     font-size: 24px;
 }
 .social__media a:hover{
-    color: #FFC845;
+    color: var(--hover-color);
 }
 .service__area{
     display: flex;
@@ -397,12 +408,12 @@ li.service__name{
     font-weight: 600;
 }
 .service__header li a{
-    color: #AB0A3D;
+    color: var(--principal-color);
     padding-bottom: 1px;
     font-weight: 400;
 }
 .service__header li a:hover{
-    color: #FFC845;
+    color: var(--hover-color);
 }
 .service__header li{
     margin-bottom: 10px;
@@ -410,7 +421,7 @@ li.service__name{
 hr{
     height: 2px;
     border: none;
-    background-color: #828282;
+    background-color: var(--footer-hr);
     margin-bottom: 1rem;
 }
 .footer__bottom{
@@ -428,11 +439,11 @@ hr{
     font-weight: 400;
 }
 .tou a{
-    color: #AB0A3D;
+    color: var(--principal-color);
     margin-left: 1.5rem;
 }
 .tou a:hover{
-    color: #FFC845;
+    color: var(--hover-color);
 }
 
 /*Cookies*/
@@ -442,15 +453,15 @@ hr{
     bottom: 0;
     left: 0;
     padding: 15px;
-    background-color:black;
-    color: white;
+    background-color: var(--texto-principal);
+    color: var(--texto-secundario);
     width: 100vw;
     text-align: center;
 }
 .avisoCookies span{
-    color: black;
-    background-color: whitesmoke;
-    border: 3px solid #AB0A3D;
+    color: var(--texto-principal);
+    background-color: var(--texto-secundario);
+    border: 3px solid var(--principal-color);
     display: inline-block;
     padding: 10px;
     border-radius: 6px;
@@ -460,8 +471,8 @@ hr{
 .avisoCookies span:hover,
 .avisoCookies span:focus {
     color: white;
-    background-image: linear-gradient(to top, #440412 0%, #ab0a3d 100%);
-    border: 3px solid black;
+    background-image: linear-gradient(to top, var(--secundario-color) 0%, var(--principal-color) 100%);
+    border: 3px solid var(--texto-principal);
 }
 
 /*Responsive Desing*/
@@ -504,7 +515,7 @@ hr{
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #fff;
+        background-color: var(--texto-secundario);
         left: 0;
         bottom: -3px;
         font-weight: 750;
