@@ -1,38 +1,3 @@
-<?php
-    //Conexion a la base de datos:
-    require ("../database/conexion.php");
-    $conexion = mysqli_connect($db_host, $db_user, $db_pass);
-    if(mysqli_connect_errno()){
-        echo "Fallo al conectar con la DataBase";
-    }
-    mysqli_select_db($conexion, $db_name) or die ("No se encuentra la DataBase");
-    mysqli_set_charset($conexion, "utf8");
-    
-    //Consulta a la base de datos:
-    $consulta = "SELECT * FROM datos_escuelas INNER JOIN redes_sociales INNER JOIN imagenes_escuelas WHERE id_red_social = '4' and  id_escuela = '4' and id_img = '4'";
-    $resultado = mysqli_query($conexion, $consulta);
-
-    while($fila = mysqli_fetch_array($resultado)){
-        $nombre_plantel = $fila["nombre_plantel"];
-        $bienvenida = $fila["bienvenidos"];
-        $oferta_educativa = $fila["oferta_educativa"];
-        $becas = $fila["becas"];
-        $facebook = $fila["facebook"];
-        $twitter = $fila["twitter"];
-        $instagram = $fila["instagram"];
-        $tiktok = $fila["tiktok"];
-        $pagina_web = $fila["pagina_web"];
-        $direccion = $fila["direccion"];
-        $whatsapp = $fila["whatsapp"];
-        $telefono = $fila["telefono"];
-        $email = $fila["email"];
-        $maps = $fila["maps"];
-        $ruta_logo = $fila["logo_escolar"];
-        $ruta_instalacion_1 = $fila["instalacion_1"];
-        $ruta_instalacion_2 = $fila["instalacion_2"];
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -59,19 +24,19 @@
                         <i class="fas fa-bars"></i>
                         <i class="fas fa-times"></i>
                     </div>
-                    <a href="index.html" class="logo">Feria Educativa</a>
+                    <a href="../index.html" class="logo">Feria Educativa</a>
                     <ul class="nav-list">
                         <li class="nav-item">
                             <a href="../index.html" class="nav-link ">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="quienes_somos.html" class="nav-link">Quienes somos</a>
+                            <a href="../quienes_somos.html" class="nav-link">Quienes somos</a>
                         </li>
                         <li class="nav-item">
                             <a href="http://www.seq.gob.mx/paenms/" target="_blank" class="nav-link ">PAEMS</a>
                         </li>
                         <li class="nav-item">
-                            <a href="preparatorias.html" class="nav-link">Preparatorias</a>
+                            <a href="../preparatorias.html" class="nav-link">Preparatorias</a>
                         </li>
                     </ul>
                 </nav>
@@ -80,10 +45,10 @@
     
         <section class="subhero" id="subhero">
             <div class="container-img">
-                <img src="/Sistema_Feria/fotos_logos/<?php echo $ruta_logo?>" alt="Imagen del logo escolar">
+                <img src="../colegios/Felipe_Carrillo_Puerto/telebachilerato.jpg" alt="Imagen del logo escolar">
             </div>
             <div class="container-municipio">
-                <h1 class="head hea-dark"><?php echo $nombre_plantel?></h1>
+                <h1 class="head hea-dark">TELEBACHILLERATO COMUNITARIO PETCACAB</h1>
             </div>
         </section>
 
@@ -103,18 +68,18 @@
                 <h2>Dirección</h2>
                 <div class="box-direccion">
                     <div class="box">
-                        <a href="<?php echo $whatsapp?>"> <ion-icon name="logo-whatsapp"></ion-icon></a>
-                        <p>Haz click para acceder al chat</p>
+                        <a href="#" target="_blank"> <ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <p>No disponible</p>
                     </div>
                     <div class="box">
                         <ion-icon name="call-outline"></ion-icon>
-                        <p><?php echo $telefono?></p>
+                        <p>983 8350770</p>
                     </div>
                 </div>
                 <div class="box-direccion">
                     <div class="box">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <p><?php echo $email?></p>
+                        <p>depto.educacionmediasuperior@seq.edu.mx</p>
                     </div>
                 </div>
                 <!-- <div class="map">
@@ -124,15 +89,15 @@
             </div>
             <div class="bienvenidos">
                 <h2>Bienvenidos</h2>
-                <iframe width="560" height="315" src="<?php echo $bienvenida?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YPrBUQzRnag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="oferta-educativa">
                 <h2>Oferta Educativa</h2>
-                <embed type="application/pdf" src="/Sistema_Feria/pdf_feria/<?php echo $oferta_educativa?>">
+                <embed type="application/pdf" src="Practicas_formulario_3/BECAS - diana ortega Lozada.pdf">
             </div>
             <div class="becas">
                 <h2>Becas</h2>
-                <embed type="application/pdf" src="/Sistema_Feria/pdf_feria/<?php echo $becas?>"/>
+                <embed type="application/pdf" src="Practicas_formulario_3/BECAS - diana ortega Lozada.pdf"/>
             </div>
             <div class="wrap">
                 <h2>Galerías</h2>
@@ -165,13 +130,13 @@
                             <img src="/Sistema_Feria/fotos_cultural/<?php echo $ruta_cultural_3?>" onclick="openFulImg(this.src)" alt="cultural 3" >
                         </div> -->
                         <div class="product-item" category="instalacion">
-                            <img src="/Sistema_Feria/fotos_instalaciones/<?php echo $ruta_instalacion_1?>" onclick="openFulImg(this.src)" alt="instalacion 1" >
+                            <img src="Practicas_formulario_3/TBC PETCACAB (1).jpeg" onclick="openFulImg(this.src)" alt="instalacion 1" >
                         </div>
                         <div class="product-item" category="instalacion">
-                            <img src="/Sistema_Feria/fotos_instalaciones/<?php echo $ruta_instalacion_2?>" onclick="openFulImg(this.src)" alt="instalacion 2" >
+                            <img src="Practicas_formulario_3/TBC PETCACAB (2).jpeg" onclick="openFulImg(this.src)" alt="instalacion 2" >
                         </div>
                         <div class="product-item" category="instalacion">
-                            <img src="/Sistema_Feria/fotos_instalaciones/<?php echo $ruta_instalacion_3?>" onclick="openFulImg(this.src)" alt="instalacion 3" >
+                            <img src="Practicas_formulario_3/TBC PETCACAB (1).jpeg" onclick="openFulImg(this.src)" alt="instalacion 3" >
                         </div>
                         <!-- <div class="product-item" category="extracurricular">
                             <img src="/Sistema_Feria/fotos_extracurricular/<?php echo $ruta_curricular_1?>" onclick="openFulImg(this.src)" alt="extracurricular 1" >
