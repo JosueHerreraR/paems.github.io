@@ -3,11 +3,14 @@
 const fulImgBox = document.getElementById("fulImgBox"),
 fulImg = document.getElementById("fulImg");
 
-function openFulImg(reference){
+const openFulImg = (reference) =>{
+    if (typeof reference !== 'string') {
+        throw new Error('Reference must be a string');
+    }
     fulImgBox.style.display = "flex";
     fulImg.src = reference
 }
 
-function closeImg(){
+const closeImg = () => {
     fulImgBox.style.display = "none";
 }

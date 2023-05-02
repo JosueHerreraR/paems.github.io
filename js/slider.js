@@ -6,11 +6,11 @@
     const arrowBefore = document.querySelector('#before');
     let value;
 
-    arrowNext.addEventListener('click', ()=>changePosition(1));
+    arrowNext.addEventListener('click', () => changePosition(1));
     
-    arrowBefore.addEventListener('click', ()=>changePosition(-1));
+    arrowBefore.addEventListener('click', () => changePosition(-1));
 
-    function changePosition(change){
+    const changePosition = (change) => {
         const currentElement = Number(document.querySelector('.slider_body-show').dataset.id);
         
         value = currentElement;

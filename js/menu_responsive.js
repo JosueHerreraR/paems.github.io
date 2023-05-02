@@ -1,6 +1,6 @@
 // Usado en el boton de 3 lineas para interactuar con el menu en modo Responsive
 
-const selectElement = function(element) {
+const selectElement = (element) => {
     return document.querySelector(element);
 }
 
