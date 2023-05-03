@@ -43,13 +43,14 @@ embed{
     text-align: center;
 }
 .container-contenido h2{
-    font-size: 35px;
+    font-size: 40px;
     background-image: linear-gradient(to top, var(--secundario-color) 0%, var(--principal-color) 100%);
-    border-radius: 80px;
-	max-width: 1000px;
-    padding: 30px;
+    border-radius: 50px;
+	width: 92%;
+    padding: 10px;
     color: var(--escuela-color);
 	margin: auto;
+	text-align: center;
 }
 .container-contenido h3{
     font-size: 28px;
@@ -68,7 +69,6 @@ embed{
 /*Sección - Galeria*/
 
 .wrap{
-	max-width: 1000px;
 	width: 100%;
 	margin: auto;
 }
@@ -90,6 +90,8 @@ embed{
 .store-wrapper{
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 .category_list{
 	display: flex;
@@ -215,7 +217,8 @@ embed{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 10px;
+    margin-top: 25px;
+	margin-bottom: 25px;
 }
 .social-prepa li{
     list-style: none;
@@ -230,6 +233,10 @@ embed{
 .social-prepa li a:hover{
     transform: translate(-10px);
     color: var(--hover-color);
+}
+.map{
+	margin-top: -40px;
+	margin-bottom: 30px;
 }
 
 /*Responsive Desing*/

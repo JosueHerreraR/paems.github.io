@@ -64,6 +64,8 @@ ul:not(.browser-default){
 
 .carousel{
     min-height: 550px;
+    margin-top: -30px;
+    margin-bottom: -30px;
 }
 .carousel .carousel-item{
     display: flex;
@@ -84,7 +86,7 @@ ul:not(.browser-default){
     border-radius: 20px;
 }
 .carousel .indicators{
-    margin-bottom: -10px !important;
+    margin-bottom: -15px !important;
 }
 .carousel .indicators .indicator-item{
     border-radius: 0;

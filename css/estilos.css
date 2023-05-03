@@ -215,6 +215,7 @@ header.abajo{
     display: flex;
     align-items: center;
     text-align: center;
+    margin-bottom: -35px;
 }
 .h2-sub {
     font-size: 3rem;
@@ -227,11 +228,13 @@ header.abajo{
     color:var(--secundario-color);
     font-weight: 600;
     line-height: 3.5rem;
+    margin-bottom: 5px;
 }
 h3{
     font-size: 20px;
     font-weight: 600;
     padding: auto;
+    margin-left: 20px;
 }
 .fil {
     text-transform: uppercase;
@@ -289,8 +292,9 @@ h3{
     margin-right: -.7rem;
 }
 .global .h2-sub {
-    letter-spacing: -1px;
+    letter-spacing: 2px;
     line-height: .42;
+    margin-bottom: 10px;
 }
 .res-info {
     text-align: center;
@@ -330,6 +334,9 @@ h3{
 .disco .res-des {
     padding-top: 3rem;
     margin-bottom: 0;
+}
+.disco{
+    margin-top: -100px;
 }
 
 /*footer*/
