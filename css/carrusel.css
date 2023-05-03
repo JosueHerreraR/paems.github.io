@@ -35,12 +35,13 @@ ul:not(.browser-default){
     display: inline;
     font-size: 35px;
     font-weight: 700;
+    margin-bottom: 10px;
     text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
 }
 .minisub { 
     color: var(--texto-principal);
     margin: 7px 0;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
     margin-top: 0;
     text-align: center;
@@ -81,6 +82,9 @@ ul:not(.browser-default){
     left: 0;
     z-index: -1;
     border-radius: 20px;
+}
+.carousel .indicators{
+    margin-bottom: -10px !important;
 }
 .carousel .indicators .indicator-item{
     border-radius: 0;

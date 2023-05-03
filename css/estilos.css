@@ -162,7 +162,7 @@ header.abajo{
     font-weight: 600;
 }
 .logo:hover{
-    color: var(--principal-color);
+    color: var(--hover-color);
 }
 .nav-item {
     border-bottom: 2px solid rgba(255, 255, 255, .3);
@@ -182,7 +182,7 @@ header.abajo{
     margin-right: -2px;
 }
 .nav-link:hover {
-    color: var(--principal-color);
+    color: var(--hover-color);
 }
 .nav-priv {
     display: block;
