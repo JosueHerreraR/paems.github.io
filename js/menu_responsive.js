@@ -1,5 +1,4 @@
 // Usado en el boton de 3 lineas para interactuar con el menu en modo Responsive
-
 const selectElement = (element) => {
     return document.querySelector(element);
 }
@@ -13,7 +12,6 @@ menuToggle.addEventListener('click', function(){
 })
 
 //Submenu preparatorias
-
 (function(){
     const listElements = document.querySelectorAll('.nav-item--show');
 
@@ -31,7 +29,6 @@ menuToggle.addEventListener('click', function(){
             });
         });
     }
-
     window.addEventListener('resize', ()=>{
         if(window.innerWidth > 800){
             deleteStyleHeight();
@@ -41,7 +38,6 @@ menuToggle.addEventListener('click', function(){
             addClick();
         }
     });
-
     if(window.innerWidth <= 800){
         addClick();
     }

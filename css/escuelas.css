@@ -61,6 +61,9 @@ embed{
 
 /*Sección - Bienvenidos*/
 
+.bienvenidos {
+	margin-top: 100px;
+}
 .bienvenidos iframe, .oferta-educativa iframe, 
 .becas iframe, .casos_de_exito iframe{
     margin: 20px;
@@ -288,7 +291,6 @@ embed{
 	.products-list .product-item:nth-child(2n+1){
 		margin-left: 0px;
 	}
-
 }
 @media screen and (max-width: 350px){
 	.products-list .product_item{

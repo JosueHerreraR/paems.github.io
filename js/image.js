@@ -1,6 +1,6 @@
 // Usado en el Lightbox de las imagenes de cada escuela
 
-const fulImgBox = document.getElementById("fulImgBox"),
+const fulImgBox = document.getElementById("fulImgBox");
 fulImg = document.getElementById("fulImg");
 
 const openFulImg = (reference) =>{

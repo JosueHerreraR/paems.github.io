@@ -29,7 +29,6 @@ html {
 }
 body {
     overflow-x: hidden;
-
 }
 section {
     padding: 3.9rem 0;
@@ -473,8 +472,7 @@ hr{
     margin-left: 15px;
     cursor: pointer;
 }
-.avisoCookies span:hover,
-.avisoCookies span:focus {
+.avisoCookies span:hover, .avisoCookies span:focus {
     color: white;
     background-image: linear-gradient(to top, var(--secundario-color) 0%, var(--principal-color) 100%);
     border: 3px solid var(--texto-principal);
